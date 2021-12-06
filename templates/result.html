@@ -1,0 +1,18 @@
+<head>
+    <title>Search Page</title>
+</head>
+<body style="background-color:powderblue;">
+    <center>
+        <table border="border: 1px solid white" style="border-style:dotted">
+            <caption><h2>Reviews</h2></caption>
+            <tr style="background-color:Tomato">
+                <th>Product Name</th><th>Reviewer Name</th><th>Rating</th><th>Comments Heading</th><th>Comment</th>
+            </tr>
+            {%for i in reviews: %}
+            <tr style="background-color:LightGray">
+                <td>{{i['p_name']}}</td><td>{{i['name']}}</td><td>{{i['rating']}}</td><td>{{i['heading']}}</td><td>{{i['comment']}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
